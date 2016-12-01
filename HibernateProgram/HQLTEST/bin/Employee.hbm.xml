@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated Dec 12, 2015 5:22:18 PM by Hibernate Tools 3.4.0.CR1 -->
+<hibernate-mapping>
+    <class name="com.hibernate.hql.Employee" table="EMPLOYEE">
+        <id name="empid" type="int">
+            <column name="EMPID" />
+            <generator class="assigned" />
+        </id>
+        <property name="Fname" type="java.lang.String">
+            <column name="FIRSTNAME" />
+        </property>
+        <property name="Lname" type="java.lang.String">
+            <column name="LASTNAME" />
+        </property>
+        <property name="Sal" type="float">
+            <column name="SALARY" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="MAILID" />
+        </property>
+    </class>
+</hibernate-mapping>
